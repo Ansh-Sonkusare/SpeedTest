@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Test By Ansh </title>
+    <script src="app.js"></script>
+    <Style>
+        body{
+            text-align: center;
+            transform: translate(-50%, -50%);
+             position: absolute;
+             top: 50%;
+             left: 50%;
+        }
+        #test_button{
+            background: none;
+            outline: none;
+            border: none;
+            text-decoration: none; 
+            border: 2px solid rgb(255, 255, 255);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background:rgb(0, 192, 226) ;
+            color: white;
+            border-radius: 25px;
+            font-weight: 700;
+            align-items: center;
+            font-size: 30px;
+            padding: 8px 80px;
+            transition: 0.3s;
+        }
+        #test_button:hover{
+            color: rgb(0, 192, 226);
+            background:white ;
+            border: 2px solid rgb(0, 192, 226);
+
+           
+        }
+        #progress{
+            color: rgb(0, 192, 226);
+            font-size:80px;
+            display: none;
+            padding: 0;
+        } 
+        span{
+            font-size: 10px;
+            display: inline;
+        }
+        @media only screen and (max-width: 600px) {
+            #progress{
+            color: rgb(0, 192, 226);
+            font-size:50px;
+            display: none;
+            padding: 0;
+        } 
+        }
+    </Style>
+</head>
+<body>
+    <h1 id="text">Measure Your Internet Speed</h1>
+    <h1 id="progress"><p>mbps</p></h1>
+    <button id="test_button"> TEST </button>
+
+</body>
+</html>
